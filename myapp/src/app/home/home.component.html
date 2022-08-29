@@ -1,0 +1,10 @@
+<div *ngIf="msg == 'hobby'">
+<app-hobby [myhobby]="hobbylist" (rhobby)="delhobby($event)"></app-hobby>
+
+</div>
+<div *ngIf="msg == 'addhobby'">
+    <app-addhobby (mynewhobby)="addnewhobby($event)" ></app-addhobby>
+</div>
+<!-- <div *ngIf="msg == 'addfav'">
+    <app-myfav [favhobby]="add"></app-myfav>
+</div> -->
